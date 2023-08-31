@@ -1,0 +1,24 @@
+---
+title: "Homework Aug 28"
+format: html
+editor: visual
+echo: false
+---
+
+Graph of: $$ax^2 + bx + c$$ where $$a = 1, b =3, c = 2$$
+
+```{r}
+a <- 1
+b <- 3
+c <- 2
+
+f <- function(x){
+  a*x^2 + b*x + c
+}
+
+x <- -10:10
+
+plot(x, f(x), type = "l")
+```
+
+As the graph does not intercept the x-axis, we can say that there are no real number solutions to: $$x^2 + 3x + 2$$
